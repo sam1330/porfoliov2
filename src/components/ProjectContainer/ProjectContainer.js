@@ -5,38 +5,48 @@ import './ProjectContainer.css'
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
-    <h3>{project.name}</h3>
+    <img
+      src={project.image}
+      alt='traveler'
+      style={{ width: '100%', height: '250px' }}
+    />
 
-    <p className='project__description'>{project.description}</p>
-    {project.stack && (
-      <ul className='project__stack'>
-        {project.stack.map((item) => (
-          <li key={uniqid()} className='project__stack-item'>
-            {item}
-          </li>
-        ))}
-      </ul>
-    )}
+    <div className='project__info'>
+      <h3>{project.name}</h3>
+      <p className='project__description'>{project.description}</p>
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GitHubIcon />
-      </a>
-    )}
+      {project.stack && (
+        <ul className='project__stack'>
+          {project.stack.map((item) => (
+            <li key={uniqid()} className='project__stack-item'>
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        className='link link--icon'
-      >
-        <LaunchIcon />
-      </a>
-    )}
+      {project.sourceCode && (
+        <a
+          href={project.sourceCode}
+          aria-label='source code'
+          className='link link--icon'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <GitHubIcon />
+        </a>
+      )}
+
+      {project.livePreview && (
+        <a
+          href={project.livePreview}
+          aria-label='live preview'
+          className='link link--icon'
+        >
+          <LaunchIcon />
+        </a>
+      )}
+    </div>
   </div>
 )
 
