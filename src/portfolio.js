@@ -24,19 +24,19 @@ const projects = [
     name: 'Traveler',
     image: `${process.env.PUBLIC_URL}/assets/traveler.png`,
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This is a simple React App built with Material UI integrating Google maps to show Points of interest around you',
     stack: ['SASS', 'Javascript', 'React', 'Material UI'],
     sourceCode: 'https://github.com/sam1330/traveler',
-    livePreview: 'https://github.com',
+    livePreview: 'https://sam1330.github.io/traveler',
   },
   {
     name: 'Point of sale',
     image: `${process.env.PUBLIC_URL}/assets/point_of_sale.png`,
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This is a basic POS template built with Inertia, TypeScript and Laravel',
     stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/sam1330/Point_of_sale_Template',
+    livePreview: 'https://github.com/sam1330/Point_of_sale_Template',
   },
   {
     name: 'Project 3',
