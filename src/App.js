@@ -6,14 +6,14 @@ import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
+// import Footer from './components/Footer/Footer'
 import './App.css'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
   return (
-    <div id='top' className={`${themeName} app`}>
+    <div id='top' className={`${themeName} app`} style={{paddingBottom: "4rem"}}>
       <Header />
 
       <main>
